@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horum Watches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HORUM</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#relojes">Relojes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="carrito-btn" onclick="abrirCarrito()">
+        🛒 Carrito (<span id="contador">0</span>)
+    </button>
+</header>
+
+<section class="hero" id="inicio">
+
+    <div>
+        <p class="pequeno">HORUM WATCHES</p>
+
+        <h1>Tu tiempo.<br>Tu estilo.</h1>
+
+        <p>
+            Descubre nuestra colección de relojes
+            diseñados para acompañarte todos los días.
+        </p>
+
+        <a href="#relojes" class="boton">
+            Ver relojes
+        </a>
+    </div>
+
+</section>
+
+<section class="catalogo" id="relojes">
+
+    <p class="pequeno">COLECCIÓN</p>
+
+    <h2>Nuestros relojes</h2>
+
+    <div class="productos">
+
+        <div class="producto">
+
+            <div class="imagen-reloj">
+                ⌚
+            </div>
+
+            <h3>Horum Classic</h3>
+
+            <p class="descripcion">
+                Diseño clásico para cualquier ocasión.
+            </p>
+
+            <p class="precio">$799 MXN</p>
+
+            <button onclick="agregarCarrito('Horum Classic', 799)">
+                Agregar al carrito
+            </button>
+
+        </div>
+
+        <div class="producto">
+
+            <div class="imagen-reloj">
+                ⌚
+            </div>
+
+            <h3>Horum Sport</h3>
+
+            <p class="descripcion">
+                Un diseño deportivo para todos los días.
+            </p>
+
+            <p class="precio">$649 MXN</p>
+
+            <button onclick="agregarCarrito('Horum Sport', 649)">
+                Agregar al carrito
+            </button>
+
+        </div>
+
+        <div class="producto">
+
+            <div class="imagen-reloj">
+                ⌚
+            </div>
+
+            <h3>Horum Premium</h3>
+
+            <p class="descripcion">
+                Elegancia y estilo en un solo reloj.
+            </p>
+
+            <p class="precio">$999 MXN</p>
+
+            <button onclick="agregarCarrito('Horum Premium', 999)">
+                Agregar al carrito
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contacto" id="contacto">
+
+    <h2>¿Tienes alguna pregunta?</h2>
+
+    <p>Contáctanos para conocer más sobre nuestros productos.</p>
+
+   <a class="boton" href="https://wa.me/524431271370" target="_blank">
+    WhatsApp
+</a>
+
+</section>
+
+<div id="carrito" class="carrito">
+
+    <div class="carrito-contenido">
+
+        <button class="cerrar" onclick="cerrarCarrito()">×</button>
+
+        <h2>Tu carrito</h2>
+
+        <div id="productosCarrito"></div>
+
+        <hr>
+
+        <h3>
+            Total:
+            $<span id="total">0</span> MXN
+        </h3>
+
+        <button class="comprar" onclick="realizarPedido()">
+            Realizar pedido
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Horum Watches</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
